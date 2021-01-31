@@ -1,0 +1,633 @@
+image: node:latest
+cache:
+  paths:
+    - node_modules/
+
+Test:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test
+  only:
+    refs:
+      - master
+Test01:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test01
+  only:
+    refs:
+      - 1-task01-program-that-returns-the-length-of-the-string
+
+Practice01:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice01.js
+  only:
+    refs:
+      - 1-task01-program-that-returns-the-length-of-the-string
+
+Test02:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test02
+  only:
+    refs:
+      - 2-task02-program-that-splits-the-string
+
+Practice02:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice02.js
+  only:
+    refs:
+      - 2-task02-program-that-splits-the-string
+
+Test03:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test03
+  only:
+    refs:
+      - 3-task03-program-that-contains-a-function-with-two-parameters-a-string-and-a-positive-number
+
+Practice03:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice03.js
+  only:
+    refs:
+      - 3-task03-program-that-contains-a-function-with-two-parameters-a-string-and-a-positive-number
+
+Test04:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test04
+  only:
+    refs:
+      - 4-task04-program-that-hides-the-email-id-from-unauthorized-users
+
+Practice04:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice04.js
+  only:
+    refs:
+      - 4-task04-program-that-hides-the-email-id-from-unauthorized-users
+
+Test05:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test05
+  only:
+    refs:
+      - 5-task05-program-that-returns-a-string-with-only-the-first-letter-from-each-word-of-the-sentence
+
+Practice05:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice05.js
+  only:
+    refs:
+      - 5-task05-program-that-returns-a-string-with-only-the-first-letter-from-each-word-of-the-sentence
+
+Test06:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test06
+  only:
+    refs:
+      - 6-task06-program-to-capitalizes-the-first-letter-of-the-given-string
+
+Practice06:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice06.js
+  only:
+    refs:
+      - 6-task06-program-to-capitalizes-the-first-letter-of-the-given-string
+
+Test07:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test07
+  only:
+    refs:
+      - 7-task07-program-to-capitalizes-the-first-letter-of-each-word-in-the-given-string
+
+Practice07:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice07.js
+  only:
+    refs:
+      - 7-task07-program-to-capitalizes-the-first-letter-of-each-word-in-the-given-string
+
+Test08:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test08
+  only:
+    refs:
+      - 8-task08-program-to-converts-uppercase-and-lowercase-letters
+
+Practice08:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice08.js
+  only:
+    refs:
+      - 8-task08-program-to-converts-uppercase-and-lowercase-letters
+
+Test09:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test09
+  only:
+    refs:
+      - 9-task09-program-that-repeats-a-given-string-n-number-of-times
+
+Practice09:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice09.js
+  only:
+    refs:
+      - 9-task09-program-that-repeats-a-given-string-n-number-of-times
+
+Test10:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test10
+  only:
+    refs:
+      - 10-task10-program-that-inserts-the-given-word-string-in-the-given-sentence-at-the-given-index-value
+
+Practice10:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice10.js
+  only:
+    refs:
+      - 10-task10-program-that-inserts-the-given-word-string-in-the-given-sentence-at-the-given-index-value
+
+Test11:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test11
+  only:
+    refs:
+      - 11-task11-program-that-converts-a-number-into-english-form
+
+Practice11:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice11.js
+  only:
+    refs:
+      - 11-task11-program-that-converts-a-number-into-english-form
+
+Test12:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test12
+  only:
+    refs:
+      - 12-task12-program-hides-the-string-if-the-string-has-more-characters-than-the-given-length
+
+Practice12:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice12.js
+  only:
+    refs:
+      - 12-task12-program-hides-the-string-if-the-string-has-more-characters-than-the-given-length
+
+Test13:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test13
+  only:
+    refs:
+      - 13-task13-program-counts-the-number-of-times-the-substring-appears-in-the-sentence
+
+Practice13:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice13.js
+  only:
+    refs:
+      - 13-task13-program-counts-the-number-of-times-the-substring-appears-in-the-sentence
+
+Test14:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test14
+  only:
+    refs:
+      - 14-task14-program-checks-whether-the-character-appears-in-the-given-sentence
+
+Practice14:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice14.js
+  only:
+    refs:
+      - 14-task14-program-checks-whether-the-character-appears-in-the-given-sentence
+
+Test15:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test15
+  only:
+    refs:
+      - 15-task15-program-removes-the-first-occurrence-of-the-substring-in-the-given-sentence
+
+Practice15:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice15.js
+  only:
+    refs:
+      - 15-task15-program-removes-the-first-occurrence-of-the-substring-in-the-given-sentence
+
+Test16:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test16
+  only:
+    refs:
+      - 16-task16-program-converts-the-vowels-a-e-i-o-u-in-the-string
+
+Practice16:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice16.js
+  only:
+    refs:
+      - 16-task16-program-converts-the-vowels-a-e-i-o-u-in-the-string
+
+Test17:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test17
+  only:
+    refs:
+      - 17-task17-program-to-check-the-sentence-ends-with-the-given-substring
+
+Practice17:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice17.js
+  only:
+    refs:
+      - 17-task17-program-to-check-the-sentence-ends-with-the-given-substring
+
+Test18:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test18
+  only:
+    refs:
+      - 18-task18-program-to-check-the-character-present-in-the-string-at-the-given-index-value-is-lowercase
+
+Practice18:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice18.js
+  only:
+    refs:
+      - 18-task18-program-to-check-the-character-present-in-the-string-at-the-given-index-value-is-lowercase
+
+Test19:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test19
+  only:
+    refs:
+      - 19-task19-program-to-check-the-character-present-in-the-string-at-the-given-index-value-is-uppercase
+Practice19:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice19.js
+  only:
+    refs:
+      - 19-task19-program-to-check-the-character-present-in-the-string-at-the-given-index-value-is-uppercase
+
+Test20:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test20
+  only:
+    refs:
+      - 20-task20-program-to-apitalizes-all-the-characters-in-the-given-string
+Practice20:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice20.js
+  only:
+    refs:
+      - 20-task20-program-to-apitalizes-all-the-characters-in-the-given-string
+
+Test21:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test21
+  only:
+    refs:
+      - 21-task21-program-to-converts-all-the-characters-in-small-letters
+Practice21:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice21.js
+  only:
+    refs:
+      - 21-task21-program-to-converts-all-the-characters-in-small-letters
+
+Test22:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test22
+  only:
+    refs:
+      - 22-task22-program-searches-whether-the-substring-appears-in-the-given-sentence
+Practice22:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice22.js
+  only:
+    refs:
+      - 22-task22-program-searches-whether-the-substring-appears-in-the-given-sentence
+
+Test23:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test23
+  only:
+    refs:
+      - 23-task23-program-take-a-message-as-an-argument-and-will-increment-it-by-a-number
+Practice23:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice23.js
+  only:
+    refs:
+      - 23-task23-program-take-a-message-as-an-argument-and-will-increment-it-by-a-number
+
+Test24:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test24
+  only:
+    refs:
+      - 24-task24-program-to-check-if-it-contains-all-alphabets-or-not
+Practice24:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice24.js
+  only:
+    refs:
+      - 24-task24-program-to-check-if-it-contains-all-alphabets-or-not
+
+Test25:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test25
+  only:
+    refs:
+      - 25-task25-program-to-multiply-binary-strings
+Practice25:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice25.js
+  only:
+    refs:
+      - 25-task25-program-to-multiply-binary-strings
+
+Test26:
+  tags:
+    - string
+  timeout: 3m
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/string-specs.git master
+    - npm install
+    - npm run test26
+  only:
+    refs:
+      - 26-task26-program-to-rotate-a-given-string-in-specified-direction-by-specified-magnitude
+Practice26:
+  tags:
+    - practice
+  timeout: 3m
+  script:
+    - node practice26.js
+  only:
+    refs:
+      - 26-task26-program-to-rotate-a-given-string-in-specified-direction-by-specified-magnitude
